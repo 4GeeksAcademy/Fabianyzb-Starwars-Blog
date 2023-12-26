@@ -1,0 +1,50 @@
+.container {
+    padding: 26px 16px;
+  }
+  
+  @media (min-width: 425px) {
+    .container {
+      padding: 32px;
+    }
+  }
+  
+  .container h2 {
+    margin-bottom: 6px;
+    letter-spacing: 3px;
+    font-size: 32px;
+  }
+  
+  @media (min-width: 425px) {
+    .container h2 {
+      font-size: 38px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container h2 {
+      font-size: 44px;
+    }
+  }
+  
+  .container > h2 > i {
+    font-size: 28px;
+  }
+  
+  .container h2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .container h2::after {
+    content: ' ';
+    width: 6px;
+    height: 80%;
+    position: absolute;
+    left: -12px;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e15021;
+  }
+  

@@ -1,0 +1,150 @@
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcef33;
+    color: #212121;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    align-self: start;
+    font-size: 15px;
+    border: none;
+    align-self: center;
+  }
+  
+  @media (min-width: 768px) {
+    .dropdown {
+      font-size: 18px;
+      padding: 12px;
+    }
+  }
+  
+  .dropdown > i {
+    margin-left: 3px;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: inherit;
+    border-radius: 5px;
+    min-width: 160px;
+    border: 1px solid #fff;
+  }
+  
+  .dropdownMenu li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .dropdownMenu li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .dropdownMenu li {
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    color: #212121;
+    background-color: #f1f1f1;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .dropdownMenu li > i {
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    .dropdownMenu li i {
+      font-size: 16px;
+    }
+  }
+  
+  .dropdownMenu li i:hover {
+    background-color: #20202034;
+  }
+  
+  .dropdownMenu li::after {
+    content: ' ';
+    position: absolute;
+    right: 50%;
+    bottom: 7px;
+    transform: translateX(50%);
+    width: 80%;
+    height: 1px;
+    background-color: #202020;
+  }
+  @keyframes bounce {
+    0% {
+      width: 80%;
+    }
+    50% {
+      width: 40%;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  
+  .dropdownMenu li:hover::after {
+    width: 0%;
+    animation: bounce 2s infinite;
+  }
+  
+  .dropdownMenu li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown.open .dropdownMenu {
+    display: block;
+  }
+  
+  .count {
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: #000000c2;
+    color: #ffffff;
+    display: inline-block;
+  }
+  
+  @media (min-width: 768px) {
+    .count {
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+  
+  li.menuTitle {
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 3px 10px;
+    font-weight: 400;
+  }
+  
+  li.menuTitle::after {
+    display: none;
+  }
+  
+  li.menuTitle:hover {
+    background-color: #202020;
+  }
+  

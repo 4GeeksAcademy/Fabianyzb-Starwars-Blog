@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 150px;
+    background-color: #000000cc;
+  }
+  
+  @media (min-width: 425px) {
+    .container {
+      width: 190px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 210px;
+    }
+  }
+  
+  .container img {
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .container h3 {
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 425px) {
+    .container h3 {
+      font-size: 22px;
+    }
+  }
+  
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  
+  .cardFooter button {
+    border: none;
+    padding: 0;
+    font-size: 13px;
+    border-radius: 3px;
+    background: none;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 425px) {
+    .cardFooter button {
+      font-size: 15px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .cardFooter button {
+      font-size: 17px;
+    }
+  }
+  
+  .cardFooter i {
+    font-size: 20px;
+  }
+  
+  @media (min-width: 425px) {
+    .cardFooter i {
+      font-size: 22px;
+    }
+  }
+  

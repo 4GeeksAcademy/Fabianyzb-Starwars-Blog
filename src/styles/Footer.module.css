@@ -1,0 +1,10 @@
+.container {
+    padding: 32px 16px;
+  }
+  
+  @media (min-width: 425px) {
+    .container {
+      padding: 32px;
+    }
+  }
+  
